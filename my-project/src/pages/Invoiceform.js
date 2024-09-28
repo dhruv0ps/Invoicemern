@@ -84,7 +84,7 @@ const InvoiceForm = () => {
     const userId = decodedToken.id; 
     console.log(userId);
     try {
-      const response = await axios.post(`http://localhost:5000/api/invoices`, {
+      const response = await axios.post(`https://invoicemern.vercel.app/api/invoices`, {
         ...formDetails,
         total,
         userId
